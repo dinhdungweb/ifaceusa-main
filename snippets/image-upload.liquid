@@ -15,7 +15,7 @@ Supported variables
 * form_id: the ID of the product form to bind file inputs to
 {%- endcomment -%}
 
-<div class="image-upload" {{ block.shopify_attributes }}>
+<div id="image-upload-{{ block.id }}" class="image-upload" {{ block.shopify_attributes }}>
   {%- if block.settings.heading != blank -%}
     <p class="image-upload__heading bold">{{ block.settings.heading }}</p>
   {%- endif -%}
@@ -169,10 +169,10 @@ Supported variables
   .image-upload__dropzone {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-height: 80px;
     padding: 20px;
-    border: 2px dashed rgba(var(--text-color), 0.3);
+    border: 2px dashed rgb(var(--text-color) / 0.3);
     border-radius: 8px;
     cursor: pointer;
     transition: border-color 0.2s ease, background-color 0.2s ease;
@@ -181,14 +181,14 @@ Supported variables
   }
 
   .image-upload__dropzone:hover {
-    border-color: rgba(var(--text-color), 0.6);
-    background-color: rgba(var(--text-color), 0.03);
+    border-color: rgb(var(--text-color) / 0.6);
+    background-color: rgb(var(--text-color) / 0.03);
   }
 
   .image-upload__dropzone:has(.image-upload__preview[style*="display: flex"]),
   .image-upload__dropzone:has(.image-upload__preview[style*="display:flex"]) {
     border-style: solid;
-    border-color: rgba(var(--text-color), 0.15);
+    border-color: rgb(var(--text-color) / 0.15);
     padding: 0;
   }
 
@@ -206,7 +206,7 @@ Supported variables
     width: 40px;
     height: 40px;
     flex-shrink: 0;
-    color: rgba(var(--text-color), 0.5);
+    color: rgb(var(--text-color) / 0.5);
   }
 
   .image-upload__icon svg {
@@ -217,7 +217,7 @@ Supported variables
   .image-upload__label {
     font-size: 14px;
     font-weight: 500;
-    color: rgba(var(--text-color), 0.7);
+    color: rgb(var(--text-color) / 0.7);
   }
 
   .image-upload__preview {
@@ -226,7 +226,7 @@ Supported variables
     display: none;
     align-items: center;
     justify-content: center;
-    background: rgba(var(--text-color), 0.03);
+    background: rgb(var(--text-color) / 0.03);
   }
 
   .image-upload__preview-img {
@@ -267,8 +267,8 @@ Supported variables
 
   /* Drag over state */
   .image-upload__dropzone.is-drag-over {
-    border-color: rgba(var(--text-color), 0.7);
-    background-color: rgba(var(--text-color), 0.06);
+    border-color: rgb(var(--text-color) / 0.7);
+    background-color: rgb(var(--text-color) / 0.06);
   }
 
   @media screen and (max-width: 599px) {
@@ -290,8 +290,7 @@ Supported variables
 
 <script>
   (function() {
-    const uploadBlock = document.querySelector('.image-upload[{{ block.shopify_attributes | replace: '"', "'" }}]') 
-      || document.currentScript.closest('.product-info__block-item')?.querySelector('.image-upload');
+    const uploadBlock = document.getElementById('image-upload-{{ block.id }}');
 
     if (!uploadBlock) return;
 
