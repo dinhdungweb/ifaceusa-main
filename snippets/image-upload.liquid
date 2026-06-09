@@ -47,6 +47,10 @@ Supported variables
           </div>
           <div class="image-upload__preview" style="display: none;">
             <img class="image-upload__preview-img" src="" alt="Preview">
+            <div class="image-upload__preview-info">
+              <span class="image-upload__preview-label">{{ block.settings.label_1 | default: 'Picture 1 (Main picture)' }}</span>
+              <span class="image-upload__preview-filename"></span>
+            </div>
             <button type="button" class="image-upload__remove" aria-label="Remove image">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -80,6 +84,10 @@ Supported variables
           </div>
           <div class="image-upload__preview" style="display: none;">
             <img class="image-upload__preview-img" src="" alt="Preview">
+            <div class="image-upload__preview-info">
+              <span class="image-upload__preview-label">{{ block.settings.label_2 | default: 'Picture 2 (For references)' }}</span>
+              <span class="image-upload__preview-filename"></span>
+            </div>
             <button type="button" class="image-upload__remove" aria-label="Remove image">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -113,6 +121,10 @@ Supported variables
           </div>
           <div class="image-upload__preview" style="display: none;">
             <img class="image-upload__preview-img" src="" alt="Preview">
+            <div class="image-upload__preview-info">
+              <span class="image-upload__preview-label">{{ block.settings.label_3 | default: 'Picture 3 (For references)' }}</span>
+              <span class="image-upload__preview-filename"></span>
+            </div>
             <button type="button" class="image-upload__remove" aria-label="Remove image">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -189,7 +201,7 @@ Supported variables
   .image-upload__dropzone:has(.image-upload__preview[style*="display:flex"]) {
     border-style: solid;
     border-color: rgb(var(--text-color) / 0.15);
-    padding: 0;
+    padding: 10px 16px;
   }
 
   .image-upload__placeholder {
@@ -221,25 +233,44 @@ Supported variables
   }
 
   .image-upload__preview {
-    position: absolute;
-    inset: 0;
     display: none;
     align-items: center;
-    justify-content: center;
-    background: rgb(var(--text-color) / 0.03);
+    gap: 14px;
+    width: 100%;
   }
 
   .image-upload__preview-img {
-    width: 100%;
-    height: 100%;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .image-upload__preview-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex-grow: 1;
+    min-width: 0;
+    text-align: left;
+  }
+
+  .image-upload__preview-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(var(--text-color));
+  }
+
+  .image-upload__preview-filename {
+    font-size: 12px;
+    color: rgb(var(--text-color) / 0.5);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .image-upload__remove {
-    position: absolute;
-    top: 8px;
-    right: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,15 +279,16 @@ Supported variables
     padding: 0;
     border: none;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
+    background: rgb(var(--text-color) / 0.08);
+    color: rgb(var(--text-color) / 0.8);
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.2s ease;
-    z-index: 2;
+    flex-shrink: 0;
   }
 
   .image-upload__remove:hover {
-    background: rgba(0, 0, 0, 0.85);
+    background: rgb(var(--text-color) / 0.15);
+    color: rgb(var(--text-color));
     transform: scale(1.1);
   }
 
@@ -308,12 +340,17 @@ Supported variables
       input.addEventListener('change', function() {
         if (this.files && this.files[0]) {
           var reader = new FileReader();
+          var file = this.files[0];
           reader.onload = function(e) {
             previewImg.src = e.target.result;
+            const filenameEl = slot.querySelector('.image-upload__preview-filename');
+            if (filenameEl) {
+              filenameEl.textContent = file.name;
+            }
             placeholder.style.display = 'none';
             preview.style.display = 'flex';
           };
-          reader.readAsDataURL(this.files[0]);
+          reader.readAsDataURL(file);
         }
       });
 
@@ -323,6 +360,10 @@ Supported variables
         e.stopPropagation();
         input.value = '';
         previewImg.src = '';
+        const filenameEl = slot.querySelector('.image-upload__preview-filename');
+        if (filenameEl) {
+          filenameEl.textContent = '';
+        }
         preview.style.display = 'none';
         placeholder.style.display = 'flex';
       });
