@@ -1,0 +1,216 @@
+<!-- Swiper.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<div class="section">
+  <div class="swiper review-slider">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide">
+          {% if block.settings.review_video != blank %}
+            <div class="review-video-container">
+              {% if block.settings.review_video contains "youtube.com" or block.settings.review_video contains "vimeo.com" %}
+                <iframe 
+                  src="{{ block.settings.review_video | replace: 'watch?v=', 'embed/' }}" 
+                  frameborder="0" 
+                  allowfullscreen
+                  class="review-video">
+                </iframe>
+              {% else %}
+                <video 
+                  controls 
+                  playsinline 
+                  preload="metadata" 
+                  poster="{{ block.settings.review_image | img_url: '1024x1024' }}"
+                  class="review-video">
+                  <source src="{{ block.settings.review_video }}" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              {% endif %}
+              
+              <div class="review-content">
+                <p class="reviewer-name">{{ block.settings.reviewer_name }}</p>
+                <div class="review-stars">
+                  {% for i in (1..block.settings.review_stars) %}
+                    {% render "star-icon-svg" %}
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          {% elsif block.settings.review_image != blank %}
+            <a href="#review-popup-{{ block.id }}" data-fancybox>
+              <img src="{{ block.settings.review_image | img_url: '1024x1024' }}" alt="Review Image">
+              <div class="review-content">
+                <p class="reviewer-name">{{ block.settings.reviewer_name }}</p>
+                <div class="review-stars">
+                  {% for i in (1..block.settings.review_stars) %}
+                    {% render "star-icon-svg" %}
+                  {% endfor %}
+                </div>
+              </div>
+            </a>
+
+            <!-- Popup for images -->
+            <div id="review-popup-{{ block.id }}" style="display: none; width: 800px; max-width: 100%">
+              <div class="popup-container">
+                <div class="popup-left">
+                  <img src="{{ block.settings.review_image | img_url: '1024x1024' }}" alt="Review Image">
+                </div>
+                <div class="popup-right">
+                  <p class="reviewer-name">{{ block.settings.reviewer_name }}</p>
+                  <div class="review-stars">
+                    {% for i in (1..block.settings.review_stars) %}
+                      {% render "star-icon-svg" %}
+                    {% endfor %}
+                  </div>
+                  <p class="review-text">{{ block.settings.review_text }}</p>
+                  {% if block.settings.review_product %}
+                    <a href="{{ block.settings.review_product.url }}" class="review-product-link">
+                      View Product: {{ block.settings.review_product.title }}
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  
+    <!-- Nút điều hướng -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .swiper {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-slide {
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .review-video-container {
+    position: relative;
+  }
+  .review-video {
+    max-width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+  }
+  .review-content {
+    padding: 15px;
+  }
+  .reviewer-name {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  /* Rest of the existing CSS remains the same */
+</style>
+
+<!-- JavaScript -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".review-slider", {
+    slidesPerView: 5,
+    spaceBetween: 10,
+    loop: true,
+    centeredSlides: false,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: { // Mobile
+        slidesPerView: 1.3,
+        centeredSlides: true,
+        spaceBetween: 10,
+        navigation: { enabled: false },
+      },
+      768: { // Tablet
+        slidesPerView: 4,
+        centeredSlides: false,
+        navigation: { enabled: false },
+      },
+      1024: { // Desktop
+        slidesPerView: 5,
+        centeredSlides: false,
+      }
+    }
+  });
+
+  // Remove Fancybox binding for videos
+  Fancybox.bind("[data-fancybox]", {
+    Toolbar: true,
+    animated: true,
+    hideScrollbar: false,
+  });
+});
+</script>
+
+{% schema %}
+{
+  "name": "Customer Reviews",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "review_image",
+          "label": "Review Image"
+        },
+        {
+          "type": "url",
+          "id": "review_video",
+          "label": "Review Video (MP4 URL or YouTube/Vimeo)"
+        },
+        {
+          "type": "text",
+          "id": "reviewer_name",
+          "label": "Reviewer Name"
+        },
+        {
+          "type": "range",
+          "id": "review_stars",
+          "label": "Star Rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "review_text",
+          "label": "Review Content"
+        },
+        {
+          "type": "product",
+          "id": "review_product",
+          "label": "Linked Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Reviews",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "review"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

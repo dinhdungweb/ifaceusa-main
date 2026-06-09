@@ -1,0 +1,360 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+IMAGE UPLOAD
+----------------------------------------------------------------------------------------------------------------------
+
+Etsy-style image upload component for product pages.
+Renders up to 3 upload slots with dashed borders, + icon, and preview functionality.
+Uses form attribute to bind inputs to the product form without being inside it.
+
+********************************************
+Supported variables
+********************************************
+
+* block: the block settings
+* form_id: the ID of the product form to bind file inputs to
+{%- endcomment -%}
+
+<div class="image-upload" {{ block.shopify_attributes }}>
+  {%- if block.settings.heading != blank -%}
+    <p class="image-upload__heading bold">{{ block.settings.heading }}</p>
+  {%- endif -%}
+
+  {%- if block.settings.description != blank -%}
+    <p class="image-upload__description text-subdued text-sm">{{ block.settings.description }}</p>
+  {%- endif -%}
+
+  <div class="image-upload__slots">
+    {%- if block.settings.show_slot_1 -%}
+      <div class="image-upload__slot" data-slot="1">
+        <label class="image-upload__dropzone" for="image-upload-slot-1-{{ block.id }}">
+          <input 
+            type="file" 
+            id="image-upload-slot-1-{{ block.id }}"
+            name="properties[{{ block.settings.label_1 | default: 'Photo 1' }}]" 
+            form="{{ form_id }}"
+            accept="image/*"
+            class="image-upload__input"
+          >
+          <div class="image-upload__placeholder">
+            <span class="image-upload__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </span>
+            <span class="image-upload__label">{{ block.settings.label_1 | default: 'Picture 1 (Main picture)' }}</span>
+          </div>
+          <div class="image-upload__preview" style="display: none;">
+            <img class="image-upload__preview-img" src="" alt="Preview">
+            <button type="button" class="image-upload__remove" aria-label="Remove image">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </label>
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.show_slot_2 -%}
+      <div class="image-upload__slot" data-slot="2">
+        <label class="image-upload__dropzone" for="image-upload-slot-2-{{ block.id }}">
+          <input 
+            type="file" 
+            id="image-upload-slot-2-{{ block.id }}"
+            name="properties[{{ block.settings.label_2 | default: 'Photo 2' }}]" 
+            form="{{ form_id }}"
+            accept="image/*"
+            class="image-upload__input"
+          >
+          <div class="image-upload__placeholder">
+            <span class="image-upload__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </span>
+            <span class="image-upload__label">{{ block.settings.label_2 | default: 'Picture 2 (For references)' }}</span>
+          </div>
+          <div class="image-upload__preview" style="display: none;">
+            <img class="image-upload__preview-img" src="" alt="Preview">
+            <button type="button" class="image-upload__remove" aria-label="Remove image">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </label>
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.show_slot_3 -%}
+      <div class="image-upload__slot" data-slot="3">
+        <label class="image-upload__dropzone" for="image-upload-slot-3-{{ block.id }}">
+          <input 
+            type="file" 
+            id="image-upload-slot-3-{{ block.id }}"
+            name="properties[{{ block.settings.label_3 | default: 'Photo 3' }}]" 
+            form="{{ form_id }}"
+            accept="image/*"
+            class="image-upload__input"
+          >
+          <div class="image-upload__placeholder">
+            <span class="image-upload__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </span>
+            <span class="image-upload__label">{{ block.settings.label_3 | default: 'Picture 3 (For references)' }}</span>
+          </div>
+          <div class="image-upload__preview" style="display: none;">
+            <img class="image-upload__preview-img" src="" alt="Preview">
+            <button type="button" class="image-upload__remove" aria-label="Remove image">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </label>
+      </div>
+    {%- endif -%}
+  </div>
+
+  {%- if block.settings.note != blank -%}
+    <p class="image-upload__note text-xs text-subdued">{{ block.settings.note }}</p>
+  {%- endif -%}
+</div>
+
+<style>
+  .image-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .image-upload__heading {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .image-upload__description {
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .image-upload__slots {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .image-upload__slot {
+    position: relative;
+  }
+
+  .image-upload__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .image-upload__dropzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    padding: 20px;
+    border: 2px dashed rgba(var(--text-color), 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-upload__dropzone:hover {
+    border-color: rgba(var(--text-color), 0.6);
+    background-color: rgba(var(--text-color), 0.03);
+  }
+
+  .image-upload__dropzone:has(.image-upload__preview[style*="display: flex"]),
+  .image-upload__dropzone:has(.image-upload__preview[style*="display:flex"]) {
+    border-style: solid;
+    border-color: rgba(var(--text-color), 0.15);
+    padding: 0;
+  }
+
+  .image-upload__placeholder {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    pointer-events: none;
+  }
+
+  .image-upload__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    color: rgba(var(--text-color), 0.5);
+  }
+
+  .image-upload__icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .image-upload__label {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(var(--text-color), 0.7);
+  }
+
+  .image-upload__preview {
+    position: absolute;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--text-color), 0.03);
+  }
+
+  .image-upload__preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .image-upload__remove {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    z-index: 2;
+  }
+
+  .image-upload__remove:hover {
+    background: rgba(0, 0, 0, 0.85);
+    transform: scale(1.1);
+  }
+
+  .image-upload__note {
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  /* Drag over state */
+  .image-upload__dropzone.is-drag-over {
+    border-color: rgba(var(--text-color), 0.7);
+    background-color: rgba(var(--text-color), 0.06);
+  }
+
+  @media screen and (max-width: 599px) {
+    .image-upload__dropzone {
+      min-height: 70px;
+      padding: 16px;
+    }
+
+    .image-upload__icon {
+      width: 32px;
+      height: 32px;
+    }
+
+    .image-upload__label {
+      font-size: 13px;
+    }
+  }
+</style>
+
+<script>
+  (function() {
+    const uploadBlock = document.querySelector('.image-upload[{{ block.shopify_attributes | replace: '"', "'" }}]') 
+      || document.currentScript.closest('.product-info__block-item')?.querySelector('.image-upload');
+
+    if (!uploadBlock) return;
+
+    const slots = uploadBlock.querySelectorAll('.image-upload__slot');
+
+    slots.forEach(function(slot) {
+      const input = slot.querySelector('.image-upload__input');
+      const placeholder = slot.querySelector('.image-upload__placeholder');
+      const preview = slot.querySelector('.image-upload__preview');
+      const previewImg = slot.querySelector('.image-upload__preview-img');
+      const removeBtn = slot.querySelector('.image-upload__remove');
+      const dropzone = slot.querySelector('.image-upload__dropzone');
+
+      /* File selection */
+      input.addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            previewImg.src = e.target.result;
+            placeholder.style.display = 'none';
+            preview.style.display = 'flex';
+          };
+          reader.readAsDataURL(this.files[0]);
+        }
+      });
+
+      /* Remove button */
+      removeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        input.value = '';
+        previewImg.src = '';
+        preview.style.display = 'none';
+        placeholder.style.display = 'flex';
+      });
+
+      /* Drag and drop */
+      ['dragenter', 'dragover'].forEach(function(eventName) {
+        dropzone.addEventListener(eventName, function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          dropzone.classList.add('is-drag-over');
+        });
+      });
+
+      ['dragleave', 'drop'].forEach(function(eventName) {
+        dropzone.addEventListener(eventName, function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          dropzone.classList.remove('is-drag-over');
+        });
+      });
+
+      dropzone.addEventListener('drop', function(e) {
+        var files = e.dataTransfer.files;
+        if (files && files[0] && files[0].type.startsWith('image/')) {
+          /* Create a new DataTransfer to set files on input */
+          var dt = new DataTransfer();
+          dt.items.add(files[0]);
+          input.files = dt.files;
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+      });
+    });
+  })();
+</script>

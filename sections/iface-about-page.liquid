@@ -1,0 +1,467 @@
+{% comment %}
+  Section: Iface About Page
+  Includes: Hero heading, About Us + Sidebar, Meet the Artists
+{% endcomment %}
+
+<section class="Iface-about" id="Iface-about-{{ section.id }}">
+
+  {%- comment -%} ── HERO HEADING ── {%- endcomment -%}
+  <div class="wa-hero">
+    <h1 class="wa-hero__title">{{ section.settings.hero_title }}</h1>
+    <p class="wa-hero__subtitle">{{ section.settings.hero_subtitle }}</p>
+  </div>
+
+  {%- comment -%} ── ABOUT US + SIDEBAR ── {%- endcomment -%}
+  <div class="wa-about">
+    <div class="wa-about__content">
+      <h2 class="wa-section-title">{{ section.settings.about_title }}</h2>
+      <div class="wa-about__body rte">
+        {{ section.settings.about_body }}
+      </div>
+      {%- if section.settings.about_tagline != blank -%}
+        <p class="wa-about__tagline"><em>{{ section.settings.about_tagline }}</em></p>
+      {%- endif -%}
+    </div>
+
+    <aside class="wa-sidebar">
+      <h3 class="wa-sidebar__title">{{ section.settings.sidebar_title }}</h3>
+      <ul class="wa-sidebar__list">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'difference_item' -%}
+            <li class="wa-sidebar__item" {{ block.shopify_attributes }}>
+              {{ block.settings.item_text }}
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </aside>
+  </div>
+
+  {%- comment -%} ── MEET THE ARTISTS ── {%- endcomment -%}
+  <div class="wa-artists">
+    <h2 class="wa-section-title">{{ section.settings.artists_title }}</h2>
+    <div class="wa-artists__grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'artist' -%}
+          <div class="wa-artist-card" {{ block.shopify_attributes }}>
+            <div class="wa-artist-card__header">
+              <h4 class="wa-artist-card__name">{{ block.settings.name }}</h4>
+              {%- if block.settings.work_url != blank -%}
+                <a href="{{ block.settings.work_url }}" class="wa-artist-card__link">View work</a>
+              {%- endif -%}
+            </div>
+            {%- if block.settings.role != blank -%}
+              <p class="wa-artist-card__role">{{ block.settings.role }}</p>
+            {%- endif -%}
+            <p class="wa-artist-card__bio">{{ block.settings.bio }}</p>
+            {%- if block.settings.joined != blank -%}
+              <p class="wa-artist-card__joined">{{ block.settings.joined }}</p>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+
+</section>
+
+<style>
+  /* ── Reset / Base ── */
+  #Iface-about-{{ section.id }} {
+    --wa-color-muted: #555555;
+    --wa-color-border: #e0dcd6;
+    --wa-color-sidebar-bg: #faf8f5;
+    --wa-color-sidebar-border: #e5e0d8;
+    --wa-color-link: #5a4a3a;
+    --wa-radius: 8px;
+    --wa-max-width: 900px;
+    --wa-gap: 48px;
+    color: var(--wa-color-text);
+    background: var(--wa-color-bg);
+    max-width: var(--wa-max-width);
+    margin: 0 auto;
+    padding: 40px 20px 64px;
+  }
+
+  /* ── Hero ── */
+  .wa-hero {
+    margin-bottom: 40px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--wa-color-border);
+  }
+
+  .wa-hero__title {
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+
+  .wa-hero__subtitle {
+    color: var(--wa-color-muted);
+    line-height: 1.6;
+    margin: 0;
+    max-width: 560px;
+  }
+
+  /* ── Section title ── */
+  .wa-section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 18px;
+    letter-spacing: -0.01em;
+  }
+
+  /* ── About + Sidebar ── */
+  .wa-about {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 36px;
+    align-items: start;
+    margin-bottom: var(--wa-gap);
+  }
+
+  .wa-about__body {
+    line-height: 1.75;
+    color: var(--wa-color-muted);
+  }
+
+  .wa-about__body p {
+    margin: 0 0 16px;
+  }
+
+  .wa-about__body p:last-child {
+    margin-bottom: 0;
+  }
+
+  .wa-about__body strong {
+    color: var(--wa-color-text);
+    font-weight: 500;
+  }
+
+  .wa-about__tagline {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--wa-color-muted);
+    font-style: italic;
+  }
+
+  /* ── Sidebar ── */
+  .wa-sidebar {
+    background: var(--wa-color-sidebar-bg);
+    border: 1px solid var(--wa-color-sidebar-border);
+    border-radius: var(--wa-radius);
+    padding: 22px 20px;
+  }
+
+  .wa-sidebar__title {
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--wa-color-accent);
+    margin: 0 0 16px;
+    text-transform: none;
+  }
+
+  .wa-sidebar__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .wa-sidebar__item {
+    font-size: 13.5px;
+    color: var(--wa-color-muted);
+    line-height: 1.6;
+    padding-left: 16px;
+    position: relative;
+  }
+
+  .wa-sidebar__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 5px;
+    height: 5px;
+    background: var(--wa-color-link);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── Artists Section ── */
+  .wa-artists__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  /* ── Artist Card ── */
+  .wa-artist-card {
+    border: 1px solid var(--wa-color-border);
+    border-radius: var(--wa-radius);
+    padding: 18px 16px 16px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .wa-artist-card:hover {
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    transform: translateY(-2px);
+  }
+
+  .wa-artist-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .wa-artist-card__name {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--wa-color-accent);
+  }
+
+  .wa-artist-card__link {
+    font-size: 12px;
+    color: var(--wa-color-link);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: opacity 0.15s;
+  }
+
+  .wa-artist-card__link:hover {
+    opacity: 0.7;
+  }
+
+  .wa-artist-card__role {
+    font-size: 12px;
+    color: var(--wa-color-muted);
+    margin: 0;
+    font-weight: 400;
+  }
+
+  .wa-artist-card__bio {
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--wa-color-muted);
+    margin: 6px 0 0;
+    flex: 1;
+  }
+
+  .wa-artist-card__joined {
+    font-size: 11.5px;
+    color: #999;
+    margin: 6px 0 0;
+    letter-spacing: 0.01em;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 700px) {
+    .wa-about {
+      grid-template-columns: 1fr;
+    }
+
+    .wa-artists__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: 701px) and (max-width: 860px) {
+    .wa-artists__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Iface About Page",
+  "tag": "section",
+  "class": "Iface-about-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Hero"
+    },
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": "Page Title",
+      "default": "My Iface Friend"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_subtitle",
+      "label": "Hero Subtitle",
+      "default": "We create one-of-a-kind, handcrafted wool portraits that honor the once-in-a-lifetime bond between people and their pets."
+    },
+    {
+      "type": "header",
+      "content": "About Us"
+    },
+    {
+      "type": "text",
+      "id": "about_title",
+      "label": "Section Title",
+      "default": "About Us"
+    },
+    {
+      "type": "richtext",
+      "id": "about_body",
+      "label": "Body Content",
+      "default": "<p>Our journey began in 2017, when <strong>Tina</strong>, a self-taught artist, discovered needle felting and recognized its natural texture and warmth as the ideal medium for lifelike pet portraits. What started as a deeply personal journey of honoring our own beloved pets has grown into a global community of animal lovers who understand that pets are never \"just pets.\" They're family. They're healers. They're best friends, soulmates, and anchors during life's storms.</p><p>Each portrait is made with extraordinary care and emotional detail using the art of needle felting. We spend hours—sometimes days or weeks—layering wool strand by strand, often incorporating real fur or whiskers to create an intimate tribute that feels like your beloved friend is truly home again.</p><p>Today, our studio focuses on <strong>signature frame portraits</strong> crafted to the highest standard. Our goal is to create tributes that feel as if your beloved friend is truly home again.</p>"
+    },
+    {
+      "type": "text",
+      "id": "about_tagline",
+      "label": "Tagline (italic)",
+      "default": "Never Just a Pet. Always a Iface Friend."
+    },
+    {
+      "type": "header",
+      "content": "Sidebar"
+    },
+    {
+      "type": "text",
+      "id": "sidebar_title",
+      "label": "Sidebar Heading",
+      "default": "The Iface Difference"
+    },
+    {
+      "type": "header",
+      "content": "Meet the Artists"
+    },
+    {
+      "type": "text",
+      "id": "artists_title",
+      "label": "Section Title",
+      "default": "Meet the Artists"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "difference_item",
+      "name": "Difference Item",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "item_text",
+          "label": "Item Text",
+          "default": "Needle-felted portraits with natural texture and warmth"
+        }
+      ]
+    },
+    {
+      "type": "artist",
+      "name": "Artist",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "Tina"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Role",
+          "default": "Founder · Needle Felting Artist"
+        },
+        {
+          "type": "url",
+          "id": "work_url",
+          "label": "View Work URL"
+        },
+        {
+          "type": "textarea",
+          "id": "bio",
+          "label": "Bio",
+          "default": "Self-taught and detail-driven, Tina discovered needle felting in 2017 and recognized its natural texture and warmth as the ideal medium for pet portraits. She sets our studio's standards and guides each commission from concept to final likeness."
+        },
+        {
+          "type": "text",
+          "id": "joined",
+          "label": "Founded / Joined",
+          "default": "Founded in 2017"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Iface About Page",
+      "blocks": [
+        {
+          "type": "difference_item",
+          "settings": {
+            "item_text": "Needle-felted portraits with natural texture and warmth"
+          }
+        },
+        {
+          "type": "difference_item",
+          "settings": {
+            "item_text": "Signature frame presentation, ready to display"
+          }
+        },
+        {
+          "type": "difference_item",
+          "settings": {
+            "item_text": "Thoughtful incorporation of real fur/whiskers (when provided)"
+          }
+        },
+        {
+          "type": "difference_item",
+          "settings": {
+            "item_text": "Multiple review rounds aimed at a high-likeness result"
+          }
+        },
+        {
+          "type": "difference_item",
+          "settings": {
+            "item_text": "Each portrait crafted by an artist – never mass-produced"
+          }
+        },
+        {
+          "type": "artist",
+          "settings": {
+            "name": "Tina",
+            "role": "Founder · Needle Felting Artist",
+            "bio": "Self-taught and detail-driven, Tina discovered needle felting in 2017 and recognized its natural texture and warmth as the ideal medium for pet portraits. She sets our studio's standards and guides each commission from concept to final likeness.",
+            "joined": "Founded in 2017"
+          }
+        },
+        {
+          "type": "artist",
+          "settings": {
+            "name": "Zoe",
+            "role": "Portrait Artist",
+            "bio": "Zoe began her career sculpting in clay, and that foundation in form, proportion, and texture now informs her sculpting with wool – helping her capture playful expressions and the unique spark in every pet.",
+            "joined": "Joined in 2023"
+          }
+        },
+        {
+          "type": "artist",
+          "settings": {
+            "name": "Sue",
+            "role": "Portrait Artist",
+            "bio": "A self-taught artist and devoted cat lover, Sue specializes in feline portraits – capturing the subtle quirks, expressions, and markings that make each cat unmistakably himself.",
+            "joined": "Joined in 2023"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

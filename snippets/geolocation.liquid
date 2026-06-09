@@ -1,0 +1,52 @@
+{% if localization.available_countries.size > 1 or localization.available_languages.size > 1 %}
+<form id="auto-localization" method="POST" action="{{ routes.localization_url }}" style="display:none">
+  <input type="hidden" name="country_code" value="">
+  <input type="hidden" name="language_code" value="">
+</form>
+
+<script>
+(function() {
+  // Tránh auto-switch nhiều lần
+  if (localStorage.getItem('autoLocaleSet') === '1') return;
+
+  var currentCountry = "{{ localization.country.iso_code }}";
+  var currentLang = "{{ request.locale.iso_code }}".toLowerCase();
+
+  // Danh sách country & language mà shop đang hỗ trợ
+  var availableCountries = {{ localization.available_countries | map: 'iso_code' | json }};
+  var availableLanguages = {{ localization.available_languages | map: 'iso_code' | json | downcase }};
+
+  // Ưu tiên ngôn ngữ theo trình duyệt
+  var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase().split('-')[0];
+  var matchLang = availableLanguages.indexOf(browserLang) > -1 ? browserLang : null;
+
+  function submitLocale(country, lang) {
+    var f = document.getElementById('auto-localization');
+    if (!f) return;
+    f.country_code.value = country || currentCountry;
+    f.language_code.value = lang || currentLang;
+    localStorage.setItem('autoLocaleSet', '1');
+    f.submit();
+  }
+
+  // Thử xác định country theo IP (ipapi.co miễn phí ở mức cơ bản)
+  fetch('https://ipapi.co/country/')
+    .then(function(r){ return r.text(); })
+    .then(function(code){
+      code = (code || '').trim().toUpperCase();
+      var matchCountry = availableCountries.indexOf(code) > -1 ? code : null;
+
+      // Chỉ submit khi có khác biệt (tránh reload vô ích)
+      if ((matchCountry && matchCountry !== currentCountry) || (matchLang && matchLang !== currentLang)) {
+        submitLocale(matchCountry || currentCountry, matchLang || currentLang);
+      }
+    })
+    .catch(function(){
+      // Nếu lookup IP lỗi, vẫn đổi ngôn ngữ theo trình duyệt nếu có
+      if (matchLang && matchLang !== currentLang) {
+        submitLocale(currentCountry, matchLang);
+      }
+    });
+})();
+</script>
+{% endif %}
