@@ -67,6 +67,16 @@
             "size_chart_page": ""
           }
         },
+        "personalization_note_U4bUyP": {
+          "type": "personalization_note",
+          "settings": {
+            "heading": "Personalization",
+            "description": "<p>Contact IFACE3D via Etsy message or iface3dhandmade@gmail.com<br>Got any special requests? Just write them here.</p>",
+            "placeholder": "Enter your instructions here...",
+            "max_length": 999,
+            "required": false
+          }
+        },
         "image_upload_47kFxg": {
           "type": "image_upload",
           "settings": {
@@ -126,6 +136,7 @@
         "separator",
         "description",
         "variant_picker",
+        "personalization_note_U4bUyP",
         "image_upload_47kFxg",
         "button_JHqbXG",
         "quantity_selector",
