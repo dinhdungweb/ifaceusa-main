@@ -1,1 +1,1776 @@
--NoNewline
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "collapse_content": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "button_JHqbXG": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://pages/contact-sales",
+            "text": "START YOUR ORDER",
+            "size": "xl",
+            "style": "fill",
+            "stretch": true,
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "liquid_9wyiqF": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% render \"delivery-info\" %}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "badges",
+        "price",
+        "rating",
+        "payment_terms",
+        "separator",
+        "description",
+        "variant_picker",
+        "button_JHqbXG",
+        "quantity_selector",
+        "buy_buttons",
+        "liquid_9wyiqF"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_fixed_add_to_cart": false,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "free_scroll",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "show_addtocart_btn": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "before_after_image_kKRprb": {
+      "type": "before-after-image",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "subheading": "Turn your pictures into a timeless art:",
+        "title": "",
+        "content": "<p>Cherish your happiest memory by a masterpiece that you will keep for life.</p>",
+        "before_image": "shopify://shop_images/z6531095285783_7bbb4b501da77bef6e6ab07b32ec0fa7.jpg",
+        "after_image": "shopify://shop_images/z6531095269870_6bb6c2304885fad1bb1ba426d34d3750.jpg",
+        "expand_image": false,
+        "text_position": "start",
+        "before_after_text_position": "bottom",
+        "before_text": "Picture",
+        "after_text": "Statue",
+        "drag_initial_position": 41,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#ffffff",
+        "after_text_color": "#ffffff",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#057c34"
+      }
+    },
+    "rich_text_UprtDa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_67W8Mt": {
+          "type": "heading",
+          "settings": {
+            "text": "MORE THAN A FIGURINE, BUT A LIFETIME KEEPSAKE",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "image_HYKVCf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/9D588D53-CB83-4EBA-A4CE-08C919157E9C.jpg",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "subheading_fxRkPn": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "richtext_jXHCMm": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Many families, couples tell us the artworks give them happiness when look at it every morning. Our artworks are made to comfort, to remember, and to enjoy that moment in a tangible form.</p>"
+          }
+        },
+        "image_pF777w": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/79D2712C-0661-47C1-97E1-F503B9161B7B.jpg",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "heading_hLYqj8": {
+          "type": "heading",
+          "settings": {
+            "text": "SCULPT WITH EXPERTISE, NOT AI or MACHINE MADE",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "image_cRUdaX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Thi_t_k_ch_a_co_ten_11.gif",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "richtext_H3rJkT": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Each project is made from scratch by the hands of real 3D sculptors with support of VR tech - no AI, no shortcuts. Every details is crafted with care and guided by your photos and stories.</p>"
+          }
+        },
+        "heading_rgnfWE": {
+          "type": "heading",
+          "settings": {
+            "text": "WE'LL BE WITH YOU EVERY STEP OF THE WAY!",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "image_W9yC3A": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/screenshot.png",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "richtext_XhpkkD": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We'll send you 3D previews, updates, and you can ask for any adjustments during the process - we need to make sure your artwork is true as your expectation before it leaves our studio.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_67W8Mt",
+        "image_HYKVCf",
+        "subheading_fxRkPn",
+        "richtext_jXHCMm",
+        "image_pF777w",
+        "heading_hLYqj8",
+        "image_cRUdaX",
+        "richtext_H3rJkT",
+        "heading_rgnfWE",
+        "image_W9yC3A",
+        "richtext_XhpkkD"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "faq_gdQwpK": {
+      "type": "faq",
+      "blocks": {
+        "item_gBmWrn": {
+          "type": "item",
+          "settings": {
+            "title": "Item details",
+            "content": "<p>- Made by: ifaceusa.com(since 2023). <br/>- Based in the US and UK. Full info at <a href=\"/pages/about-us\" title=\"Everything about IFACEUSA.COM\">About us.</a><br/>-️ Materials: Plant-based resin, solid and durable.<br/>- Spanish Vallejo Acrylic. <br/>- Size: 8 inches.<br/><br/>Turn-around time: 7-15 business days.<br/>*If your picture includes some complicated details, the turn-around time could take longer.</p>"
+          }
+        },
+        "item_7Djf4h": {
+          "type": "item",
+          "settings": {
+            "title": "Delivery and Refund & Return",
+            "content": "<p><strong>Shipping:</strong><br/>- US shipping time: 6-10 business days <br/>- UK-EU shipping time: 6-8 business days <br/><br/><strong>Shipping insurance: </strong>If you receive the product damaged? - We provide a FREE replacement.<br/><br/><strong>Refunds & returns </strong>are available at <a href=\"/pages/return-refund-policy\" title=\"Return & Refund Policy\">Policy</a>.</p>"
+          }
+        },
+        "item_NKqUVN": {
+          "type": "item",
+          "settings": {
+            "title": "Warranty(up to 5 years)",
+            "content": "<p><strong>3-year warranty: I</strong>f the arts got any problems itself, we provide a FREE replacement. <br/><br/>You can upgrade it longer at <a href=\"/pages/extended-warranty\" title=\"Extended Warranty\">5-Year</a> warranty program. This action costs NO EXTRA.</p>"
+          }
+        },
+        "item_m4WPL9": {
+          "type": "item",
+          "settings": {
+            "title": "My photo doesn't show legs, can you do it?",
+            "content": "<p>No problem! we’ll design it for you by ourselves!</p>"
+          }
+        },
+        "item_NAJ6fG": {
+          "type": "item",
+          "settings": {
+            "title": "We don't have a picure together, can you  still make a statue from separated photos?",
+            "content": "<p>Absolutely yes! Just send all of them over to us and share your requirements. Let us do the rest!</p>"
+          }
+        },
+        "item_nWztXE": {
+          "type": "item",
+          "settings": {
+            "title": "What if I don't like my 3D design?",
+            "content": "<p>No worries at all. We're happy to adjust it for FREE until it meets your expectations.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_gBmWrn",
+        "item_7Djf4h",
+        "item_NKqUVN",
+        "item_m4WPL9",
+        "item_NAJ6fG",
+        "item_nWztXE"
+      ],
+      "settings": {
+        "full_width": false,
+        "subheading": "Information:",
+        "title": "",
+        "content": "",
+        "team_avatar": "shopify://shop_images/z6531054812227_09406bb05b91496d7914bf44e8333aac.jpg",
+        "team_avatar_width": 240,
+        "support_hours": "Wondering which photo? Just send it over to get suggestion & lovely ideas!",
+        "answer_time": "Average answer time: in minutes",
+        "button_text": "START YOUR ORDER",
+        "button_url": "shopify://pages/contact-sales",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [
+          "personalised-woman-statue",
+          "british-couple-family",
+          "indian-couple",
+          "wedding-statue",
+          "traditional-costume-statue",
+          "single-statue",
+          "personalised-cartoon-character",
+          "personalised-baby-statue",
+          "group-friends",
+          "single-portrait-bust",
+          "couple-portrait-bust"
+        ],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "You may also like:",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_link_block_custom_tchJKE": {
+      "type": "image-link-block-custom",
+      "blocks": {
+        "item_digXaD": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5832.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Oct-16-2024:</strong> \"Our reaction says it all! Can't stop staring at it 😊 Incredible!! A happy family right here! Thank ...\" - Terry Clark <br/><a href=\"https://www.instagram.com/reel/DBK2aHmu11R/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/reel/DBK2aHmu11R/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_niyUPC": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/nh_man_hinh_2025-06-27_luc_11.04.34.png",
+            "stretch_image": true,
+            "link_text": "<p><strong>June-6-2025: \" </strong>We’ve had some tears and my son who is autistic gave nanny a kiss. Thank you so much...\"- J.L Billington<br/><a href=\"https://www.instagram.com/reel/DKjimzCRabg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/reel/DKjimzCRabg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_Q7kc3p": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/nh_man_hinh_2025-07-05_luc_18.08.28.png",
+            "stretch_image": true,
+            "link_text": "<p><strong>July-5-2025:</strong> \"Words can't even say just how amazing Jessica's work is. I highly recommend IFACE you will not regret it...\" - Daniel H Gibson<br/><a href=\"https://www.instagram.com/reel/DLtuu2Kxigw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/reel/DLtuu2Kxigw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_gfcyCT": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/z6930503216199_8c513691b77a7fbe5a63868e455a73fa.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Aug-25-2025: </strong>\"Absolutely outstanding work I’m in love with the image you have created 😍, it’s unbelievably gorgeous,...\" - C.L.Saunders<br/><a href=\"https://www.instagram.com/p/DNyROF55MSu/?utm_source=ig_web_copy_link&igsh=cm9nZ3BoNm01NXpp\" target=\"_blank\" title=\"https://www.instagram.com/p/DNyROF55MSu/?utm_source=ig_web_copy_link&igsh=cm9nZ3BoNm01NXpp\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_Kb7DyU": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/SnapInsta.to_587807433_17918525991218602_1075404422143510193_n.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Dec-2-2025: </strong>\"Thank you sooo much for your amazing piece of art! It made our cake so much more special. We truly appreciate it so much...\"- الله وحده يعلم<br/><a href=\"https://www.instagram.com/p/DRwjsZkgevK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DRwjsZkgevK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_UaLMRR": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Feedback_104th_My_client_sent_me_an_old_wedding_photo_of_her_parents_to_create_a_statue_in_mem.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Aug-9-2025: \"</strong>Thank you for making this precious present that I was able to give my mom. She loved it so much...\"- Janet Rose<br/><a href=\"https://www.instagram.com/p/DNIUk_iSe2-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DNIUk_iSe2-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_A6L4hW": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Dad_you_re_always_been_my_hero_This_is_a_recent_order_from_my_American_client._She_would_like_to_order_a_statue_of_her_family_to_surprise_her_husband_on_Father_s_Day._And_the_special.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>June-22-2025: \"</strong>Thank you for your amazing work, my husband and I loved it, great details, friendly customer service ...\" - K.Limbachia<br/><a href=\"https://www.instagram.com/p/DLK9Z3iSHVe/?utm_source=ig_web_copy_link&igsh=ejJjNXA4azRhdjcx\" target=\"_blank\" title=\"https://www.instagram.com/p/DLK9Z3iSHVe/?utm_source=ig_web_copy_link&igsh=ejJjNXA4azRhdjcx\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_Twi6dm": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Feedback_102nd_My_client_had_a_beautiful_idea_turning_a_wedding_photo_into_a_statue_to_surp.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Aug-4-2025: </strong>\"Amazing 😍🙏thank you for your incredible work 👏 My wife was really happy with the gift...\" - Elgert Morina<br/><a href=\"https://www.instagram.com/p/DM5keT_zqRA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DM5keT_zqRA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_MwRMeJ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/92234645-4103-4F40-B8C1-BE2ED2EA975D.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-21-2025:</strong> \"Amazing job,  turned out even better than  expected! Actually worth ⭐⭐⭐⭐⭐ love  ... !\" - Nilton Alves <br/><a href=\"https://www.instagram.com/p/DFDr26hzE9l/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DFDr26hzE9l/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_xXFadt": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/z6797469804426_984f16d73947513277de63a06740cb6d.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>July-2-2025: \"</strong>Thanks again for the gift, a nice gift to keep in the family for years to come ❤️\" - Scott Mcqueen<br/><a href=\"https://www.instagram.com/p/DLkVNZTz3vu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DLkVNZTz3vu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_ndKLNK": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/SnapInsta.to_581190005_17964975387003671_409939819005071695_n.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Nov-13-2025: </strong>\"I am very pleased with the results of my item.Thank you very much this lovely art of work. 😍😍😍...\" - Paolita Gomez<br/><a href=\"https://www.instagram.com/p/DQ-pZDzEjwZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DQ-pZDzEjwZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_rDF3QJ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5251_ee63be6c-077e-41df-98b5-d96665663c72.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Sep-21-2021:</strong> \"So happy with this model, It looks just like the photo. Couldn't be more pleased!...\" - C.Stowe <br/><a href=\"https://www.instagram.com/p/DAJY0QpTRLt/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DAJY0QpTRLt/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_b6CgnA": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/ifaceusa.com_2_383c7b80-3017-4d0b-8b0d-0d87699b8f65.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Mar-21-2025:</strong> \"Absolutely over the moon with how the final product turned out. My son can't stop smiling...\" - K.Dabin <br/><a href=\"https://www.instagram.com/p/DHbqPvEzYg5/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DHbqPvEzYg5/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_cJFVeq": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/My_client_wanted_something_truly_special_for_his_friend_Dave_s_70th_birthday_so_he_sent_me_a_photo_of_the_two_of_them_together_He_was_super_focused_on_every_little_detail_even_down_to.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>May-28-2025:</strong> \"Great quality, very reasonable rates, fantastic experience overall. Highly recommended!\" - K.Singh<br/><a href=\"https://www.instagram.com/p/DKKqV57zxa4/?utm_source=ig_web_copy_link&igsh=ajFlandxN3Q3aXg5\" target=\"_blank\" title=\"https://www.instagram.com/p/DKKqV57zxa4/?utm_source=ig_web_copy_link&igsh=ajFlandxN3Q3aXg5\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_QcQTkF": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/nh_man_hinh_2025-08-09_luc_22.59.07.png",
+            "stretch_image": true,
+            "link_text": "<p><strong>July-27-2025: \"</strong>Thankyou so much it's amazing and so much more personal than a picture very talented 😍...\" - Hannah Stuart<br/><a href=\"https://www.instagram.com/p/DMmN7XKx4YK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DMmN7XKx4YK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_ahg7qt": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/SnapInsta.to_564298464_17879768484410300_2029675076907544933_n_3ce0f2f8-1e0c-414e-9b0d-5968ed292564.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Oct-21-2025: </strong>\"It was a really beautiful and lovely surprise for my husband and we're really happy about it. Thank YOU and be blessed 🥰💕...\" - Ellen Savitskis<br/><a href=\"https://www.instagram.com/p/DQEprhOEbi6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DQEprhOEbi6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_fDHdNP": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_2029_2.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Mar-29-2025: </strong>\"Really appreciated the work 🙌 I'm happy with every single detail will most definitely...\" - Kyle Waddell<br/><a href=\"https://www.instagram.com/p/DHx55v2zPBb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DHx55v2zPBb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_ayTEwE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/SnapInsta.to_588642340_17966874051003671_6351085593063668249_n.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Dec-1-2025: </strong>\"This 3d sculpture turned out stunningly beautiful. We will definitely recommend you to everyone we know 😃🥰...\" - Ash Rangee<br/><a href=\"https://www.instagram.com/p/DRt_A3viePe/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DRt_A3viePe/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_eiVALb": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/SnapInsta.to_552416794_17911107060218602_7760902473512936604_n.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Sep-22-2025: </strong>\"Thank you so much. I received it today, and it's absolutely perfect. My family loves it so much!...\" - Kiran Kaur<br/><a href=\"https://www.instagram.com/p/DO6W75xAd-3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DO6W75xAd-3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_HwQc4U": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4C024CED-4E11-4098-B6E8-915EAA6F301F_2.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Mar-25-2025:</strong> \"Super good cooperation nice conversations and finally great job come in your hand!\" - Yuksel R Gurel<br/><a href=\"https://www.instagram.com/p/DHnczq1SPSb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DHnczq1SPSb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_ywMbYy": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/B48EBD3B-1243-4324-B046-EC997EB14839.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>May-11-2025: \"</strong>Thank you so much. We are so happy with the work. It was a great experience from start to finish\" - Joseph Clarke<br/><a href=\"https://www.instagram.com/reel/DJiZGWbTnsd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/reel/DJiZGWbTnsd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_mmAyjq": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/This_is_precious_this_is_both_of_us_This_is_my_recent_order_from_a_client_in_the_US_he_asked_us_for_a_statue_of_his_parent_but_special_thing_it_is_made_based_on_an_old_wedding_photo_w.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>June-20-2025: </strong>\"My parents really love this gift, my mom even recognised both of them from the first look...\" - Yadira Rios<br/><a href=\"https://www.instagram.com/p/DLFQu7mz3ZM/?utm_source=ig_web_copy_link&igsh=ZzV1M3k1azY0cWo2\" target=\"_blank\" title=\"https://www.instagram.com/p/DLFQu7mz3ZM/?utm_source=ig_web_copy_link&igsh=ZzV1M3k1azY0cWo2\"><strong>View Post</strong></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_6tVhny": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Father_s_Day_feedback_Another_happy_family_here_This_order_is_from_a_lovely_wife_she_asked_me_for_a_statue_of_her_hubby_and_son._The_idea_is_simple_just_keep_the_clothes_same_as_origi.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>June-22-2025:</strong> \"Thank you so much! It’s honestly amazing, my husband and my son really love it...\" - Hannah Christine<br/><a href=\"https://www.instagram.com/p/DLK3-LFyQJA/?utm_source=ig_web_copy_link&igsh=dmtwdTVxdXpkMnl2\" target=\"_blank\" title=\"https://www.instagram.com/p/DLK3-LFyQJA/?utm_source=ig_web_copy_link&igsh=dmtwdTVxdXpkMnl2\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_BCbMb4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Feedback_103rd_A_granddaughter_ordered_this_statue_to_celebrate_her_grandparents_57th_Anniver.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Aug-9-2025: </strong>\" Thank you so much! They are definitely surprise, it is so meaningful for us! really appreciate everything you do!\" <br/><a href=\"https://www.instagram.com/p/DNITfawzTrc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DNITfawzTrc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_X7jgaA": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Feedback_105th_A_sweet_birthday_surprise_from_a_husband_to_his_wife_a_statue_of_them_with_th.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Aug-9-2025: </strong>\" It's so amazing! Thank you so much for everything, my wife even cried when she saw the statue...\" - Andy<br/><a href=\"https://www.instagram.com/p/DNIV7LnzxM1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DNIV7LnzxM1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_BMJMke": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/D6DAE97D-C0FF-4941-9E69-F4041535F466_2.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Dec-3-2024:</strong> \"Fantastic 👏Thank you so much for doing fabulous job. Great service from start to finish😊❤️\" - P.Karabardak<br/><a href=\"https://www.instagram.com/p/DDFcFUmz2_A/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DDFcFUmz2_A/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_7nHkKj": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/SnapInsta.to_605884214_17923572801210730_7841041933901590239_n.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Dec-27-2025: </strong>\"Thank you so much for the statue 👌😍They absolutely loved it. Amazing work—perfectly done!👍\" - DaNa<br/><a href=\"https://www.instagram.com/p/DSwzYL-EyML/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DSwzYL-EyML/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_7gX3ge": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/SnapInsta.to_557955669_17916556272189454_4915486941887902417_n.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Oct-2-2025: \"</strong>We really love our new statue. It's amazing. The level of work and skill that has gone into this statue is staggering...\" - Mark Wilson<br/><a href=\"https://www.instagram.com/p/DPTSccQEkq-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DPTSccQEkq-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_A3jwGP": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Feedback_122nd_Baze_Family_2025_______This_order_is_from_a_lovely_wife_she_asked_me_for.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-1-2026: </strong>\"This is such a beautiful statue of my family! I'm so glad I ran across this Instagram page & was able to get it done for my husband's Christmas gift!\" - Destiny Baze<br/><a href=\"https://www.instagram.com/p/DS7SqzNkz2l/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==\" target=\"_blank\" title=\"https://www.instagram.com/p/DS7SqzNkz2l/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_qUrm8z": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Feedback_123rd_Nico_and_Gina_This_was_a_very_special_order_from_a_mother_who_wanted_to_gift.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-2-2026: </strong>\"They are so happy and were absolutely thrilled. Thank you so much.<br/>I wish them a Happy New Year...\" - Noreen<br/><a href=\"https://www.instagram.com/p/DTASASOEXnM/?utm_source=ig_web_copy_link&igsh=ZDNlZDc0MzIxNw==\" target=\"_blank\" title=\"https://www.instagram.com/p/DTASASOEXnM/?utm_source=ig_web_copy_link&igsh=ZDNlZDc0MzIxNw==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_x9HWb9": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/0830AD8A-DD3E-4EB3-927E-DF258CA48B36.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Mar-25-2025:</strong> \"It's safe to say Keilley Loved the statue (As I did too). And  big thank you for the little details too...\" - A.Shepherd <br/><a href=\"https://www.instagram.com/p/DHnt2COz-Xt/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DHnt2COz-Xt/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_bKwtHA": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/922C7955-2B50-45EB-9A8F-9B0C4539AF86.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Mar-25-2025:</strong> \"Super good cooperation nice conversations and finally great job come in your hand!\" - Y.R Gurel <br/><a href=\"https://www.instagram.com/p/DHnczq1SPSb/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DHnczq1SPSb/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_FyAYgH": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/40D96016-C974-45B7-8691-BF978A8E2FB4.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Mar-28-2025: </strong>\"I'm in love. So much attention to detail and the painting is phenomenal. Such a great personalised gift.\" - T.Rafferty <br/><a href=\"https://www.instagram.com/p/DHvzLAvTIXZ/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DHvzLAvTIXZ/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_7HgARR": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG_5258.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Mar-1-2025:</strong> \"The art speaks for itself, its amazing! Team were so helpful, even sent updates during process...\" - R.Wáğner <br/><a href=\"https://www.instagram.com/p/DGn-NPxTvJw/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DGn-NPxTvJw/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_WrHTqN": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG_5256.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Feb-22-2025: </strong>\"I asked for Chris to be slimmed, It's actually crazy how much it looks like . Thank you so so much!...\"-K. Colthorpe <br/><a href=\"https://www.instagram.com/p/DGXJlVMzDoV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DGXJlVMzDoV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><em><strong>View Post</strong></em></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_Hzrnqb": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/6145E431-D98E-42F4-8A6F-A09552B57814_549f716a-deb1-4255-82da-931a49f04f89.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Feb-2-2025:</strong> \"Thank you so much! My friend loves this fantastic gift 👏. We are truly grateful for your work! – Zoe Martin <br/><a href=\"https://www.instagram.com/p/DFjygTsz8x9/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DFjygTsz8x9/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_rzerxr": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG_5253.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-28-2025:</strong> \"Thank you so much for the incredible model! My wife absolutely loved her present 🔥...!\" - Max Cornhill <br/><a href=\"https://www.instagram.com/p/DFXVuZMz2Id/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DFXVuZMz2Id/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_8GwRgJ": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG_5255.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-21-2025:</strong> \"Amazing job,  turned out even better than  expected! Actually worth ⭐⭐⭐⭐⭐ love  ... !\" - Nilton Alves <br/><a href=\"https://www.instagram.com/p/DFDr26hzE9l/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DFDr26hzE9l/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_awe9AY": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG_5257.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Feb-12-2025:</strong> \"Absolutely unbelievable. I'm so pleased with everything. hank you so much for your amazing work...\" -<em><strong> </strong></em>Kyle Frost <br/><a href=\"https://www.instagram.com/p/DF-MDuwyCBO/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DF-MDuwyCBO/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_MA3pYk": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/A72F1316-1D2F-4062-B9FB-AE2B63005876.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-19-2025:</strong> \"These are absolutely fantastic! ! It's such a cute statue, and we love the details on it\" - Matt Price <br/><a href=\"https://www.instagram.com/p/DFAJF0vTfrB/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DFAJF0vTfrB/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_8bPmem": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/CEE90958-7533-4DF3-A53D-3721835A671A.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-13-2025:</strong> \"The team were helpful through the process because I was quite particular with my request...\" - S.Buckley <br/><a href=\"https://www.instagram.com/p/DEw0GVJz8Aa/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DEw0GVJz8Aa/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_6VbMzc": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/0743C433-DB93-4AF1-9D7B-3ED07DEE95E7.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-10-2024: </strong>\"It's turned up undamaged and amazing!! Thank you 💝my girlfriend absolutely loves it!..\" - Jack Down <br/><a href=\"https://www.instagram.com/p/DEpkiJFz1mf/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DEpkiJFz1mf/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_Pyi3nD": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/53F44A7D-BC85-49DE-B644-9C98DDFE5C5A.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-9-2025:</strong> \"It’s absolutely wonderful!! Everyone loved it. Thank you from the bottom of my heart ...\" - Amal Krishnan<br/> <a href=\"https://www.instagram.com/p/DElSpkGoLBe/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DElSpkGoLBe/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_grV9MV": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/5A2EDDB4-1D68-4A08-934D-2863817422CE.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Dec-27-2024:</strong> \"Thanks for all you did, it was given to my sister and her husband and they love the present ...\" - R.J.Nugent<br/><a href=\"https://www.instagram.com/p/DEDOhXgSWTP/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DEDOhXgSWTP/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_xwHUiC": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG_9804.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Sep-15-2024:</strong> \"I was amazed by your art😍 @ifaceuk Thank you so much for  the perfect sculpture of me and my wife...\" - Canjo F'des<br/><a href=\"https://www.instagram.com/p/C_8BXyCTqBk/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/C_8BXyCTqBk/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_VEPWaj": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/z6534415985154_dbc89879403fa6c686dc259b9c39f26d.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Nov-27-2024:</strong> \"Thank  you so so much. The thing you made really special and wonderful, it is worth to wait 💜💜💜...\" - A. Rodriguez <br/><a href=\"https://www.instagram.com/p/DC4b6MXzi7B/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DC4b6MXzi7B/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_jRxPjy": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/z6534490363117_f62c5f4d16045fe8ef757767ac7cd188.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Mar-28-2025: </strong>\"I'm in love. So much attention to detail and the painting is phenomenal. Such a great personalised gift.\" - T.Rafferty <br/><a href=\"https://www.instagram.com/p/DHvzLAvTIXZ/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DHvzLAvTIXZ/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_digXaD",
+        "item_niyUPC",
+        "item_Q7kc3p",
+        "item_gfcyCT",
+        "item_Kb7DyU",
+        "item_UaLMRR",
+        "item_A6L4hW",
+        "item_Twi6dm",
+        "item_MwRMeJ",
+        "item_xXFadt",
+        "item_ndKLNK",
+        "item_rDF3QJ",
+        "item_b6CgnA",
+        "item_cJFVeq",
+        "item_QcQTkF",
+        "item_ahg7qt",
+        "item_fDHdNP",
+        "item_ayTEwE",
+        "item_eiVALb",
+        "item_HwQc4U",
+        "item_ywMbYy",
+        "item_mmAyjq",
+        "item_6tVhny",
+        "item_BCbMb4",
+        "item_X7jgaA",
+        "item_BMJMke",
+        "item_7nHkKj",
+        "item_7gX3ge",
+        "item_A3jwGP",
+        "item_qUrm8z",
+        "item_x9HWb9",
+        "item_bKwtHA",
+        "item_FyAYgH",
+        "item_7HgARR",
+        "item_WrHTqN",
+        "item_Hzrnqb",
+        "item_rzerxr",
+        "item_8GwRgJ",
+        "item_awe9AY",
+        "item_MA3pYk",
+        "item_8bPmem",
+        "item_6VbMzc",
+        "item_Pyi3nD",
+        "item_grV9MV",
+        "item_xwHUiC",
+        "item_VEPWaj",
+        "item_jRxPjy"
+      ],
+      "name": "Image link custom",
+      "settings": {
+        "full_width": false,
+        "block_size": "medium",
+        "subheading": "⭐ CUSTOMER REVIEWS:",
+        "title": "",
+        "content": "<p>Click to view original post on Instagram.</p>",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "image_link_block_custom_F3ABJe": {
+      "type": "image-link-block-custom",
+      "blocks": {
+        "item_hVUB7f": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/I_just_got_this_feedback_from_my_client_Mr._tc230587_His_family_looked_absolutely_stunning_in_their_silk_dresses_so_I_did_my_very_best_to_capture_every_detail_in_the_statue._It_took_m.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>June-10-2025: </strong>\"Really happy with this! My family love it, such a beautiful artwork! Thank you so much for all you did !!...\" - Tom C<br/><a href=\"https://www.instagram.com/p/DKtSONYz75b/?utm_source=ig_web_copy_link&igsh=MWYxZ3BobXR1NHJlcQ==\" target=\"_blank\" title=\"https://www.instagram.com/p/DKtSONYz75b/?utm_source=ig_web_copy_link&igsh=MWYxZ3BobXR1NHJlcQ==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_8DpC4J": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Thi_t_k_ch_a_co_ten_2_266f1509-8138-4bed-827d-7b4b257c8702.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Apr-29-2025: </strong>\"We love it! This is one of the most  gifts we've ever received. we’ll cherish it  for a very long time...\" - O.Torres<br/><a href=\"https://www.instagram.com/reel/DJBfL3QSKmh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/reel/DJBfL3QSKmh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_8VezjV": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5257_287bf77b-bb98-4e93-bbf0-b65ddf724b22.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Feb-12-2025:</strong> \"Absolutely unbelievable. I'm so pleased with everything. Thank you so much for your amazing work...\" -<em><strong> </strong></em>Kyle Frost <br/><a href=\"https://www.instagram.com/p/DF-MDuwyCBO/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DF-MDuwyCBO/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_ahPHQB": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/FEB94D89-3E19-4BE8-85DC-36A4386DD8F4_98e5b033-b6d8-40c1-ad05-79e2f38a6f5c.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Oct-2-2024:</strong> \"Thank you for everything! You did a great job, this is so perfect. The statue means a lot with us...\" - Yanira Velez <br/><a href=\"https://www.instagram.com/p/DAoFWf8S2mt/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DAoFWf8S2mt/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_66VUr8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Feedback_99th_This_art_is_a_great_gift_for_me_who_is_far_from_my_daughter..._My_recent_clie.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jul-16-2025: </strong>\"This art is a great gift for me, who is far from my daughter. Thank you so mụch Megan!” - Luis Erazaba<br/><a href=\"https://www.instagram.com/p/DMKkbufTGtX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DMKkbufTGtX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_4KHhEt": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/0743C433-DB93-4AF1-9D7B-3ED07DEE95E7_5bcb299b-2737-41b5-9221-1f05cf338473.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-10-2025: </strong>\"It's turned up undamaged and amazing!! Thank you 💝my girlfriend absolutely loves it!..\" - Jack Down <br/><a href=\"https://www.instagram.com/p/DEpkiJFz1mf/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DEpkiJFz1mf/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_iJKacE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_9804_324e0f03-982b-4bc3-9a0f-6ae9c267d013.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Sep-15-2024:</strong> \"I was amazed by your art😍 @ifaceuk Thank you so much for  the perfect sculpture of me and my wife...\" - Canjo F'des<br/><a href=\"https://www.instagram.com/p/C_8BXyCTqBk/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/C_8BXyCTqBk/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_HqFjrY": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/EDA19C12-3182-475D-AA93-F2993F6B1584_2.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>May-14-2025:</strong> \"Actually an amazing work 👍🏻. My girlfriend loves the statue. Thank you so so much for wonderful job...\"- Niko<br/><a href=\"https://www.instagram.com/p/DJoSpsYylXC/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DJoSpsYylXC/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#1a1a1a",
+            "overlay_opacity": 0
+          }
+        },
+        "item_KTkhJp": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Media_001_2_a2b93ae5-4505-4610-bc25-bc170784215a.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Apr-23-2025:</strong> \"It was so wonderful to receive such a beautiful little piece of art, . We will cherish it foever,...\" - N.S.Massimi<br/><a href=\"https://www.instagram.com/p/DIyZYwpTCqT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DIyZYwpTCqT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_JPKqDt": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5253_ac3ca683-5c1a-470b-a863-68ad5440781c.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-28-2025:</strong> \"Thank you so much for the incredible model! My wife absolutely loved 🔥. Couldn't be ...!\" - Max Cornhill <br/><a href=\"https://www.instagram.com/p/DFXVuZMz2Id/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DFXVuZMz2Id/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_m6BWMK": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/A72F1316-1D2F-4062-B9FB-AE2B63005876_71c0094e-faa3-4f34-a1c3-7adc7fc73321.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-19-2025:</strong> \"These are absolutely fantastic! ! It's such a cute statue, and we love the details on it. Thank you...\" - M.Price <br/><a href=\"https://www.instagram.com/p/DFAJF0vTfrB/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DFAJF0vTfrB/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_TGcGwA": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Thank_you_Megan_for_the_amazing_job..._Just_got_this_sweet_words_from_my_client._He_reached_out_to_me_to_order_a_family_statue_for_his_friend_with_one_simple_request_to_add_their_belo.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>June-26-2025: </strong>\"Thank you Megan for the amazing job. I'm sure the recipient of this masterpiece will too.\" - Pardeep Gill<br/><a href=\"https://www.instagram.com/p/DLX3edXzYn7/?utm_source=ig_web_copy_link&igsh=Mjdpamplbm9raHlm\" target=\"_blank\" title=\"https://www.instagram.com/p/DLX3edXzYn7/?utm_source=ig_web_copy_link&igsh=Mjdpamplbm9raHlm\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_7VRGzy": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/53F44A7D-BC85-49DE-B644-9C98DDFE5C5A_b297be6b-0573-4eb5-a2db-6c319641d2a2.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-9-2025:</strong> \"It’s absolutely wonderful!! Everyone loved it. Thank you from the bottom of my heart ...\" - Amal Krishnan<br/> <a href=\"https://www.instagram.com/p/DElSpkGoLBe/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DElSpkGoLBe/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_NqyEDj": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Media_001_1.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Apr-11-2025:</strong> \"Amazing quality and attention to detail, perfect Mother’s Day gift for my love...\"- A.Feltham<br/><a href=\"https://www.instagram.com/p/DISmeeST1Hq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DISmeeST1Hq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "https://www.instagram.com/p/DISmeeST1Hq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_eFtxGL": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/40D96016-C974-45B7-8691-BF978A8E2FB4_a55f3286-41b1-4334-ba7c-2907a879e8a1.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Mar-28-2025: </strong>\"I'm in love. So much attention to detail and the painting is phenomenal. Such a great personalised gift.\" - T.Rafferty <br/><a href=\"https://www.instagram.com/p/DHvzLAvTIXZ/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DHvzLAvTIXZ/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_DEdgVT": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Feedback_117th_My_client_ordered_this_couple_statue_as_a_first_anniversary_gift_for_her_husban.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Oct-17-2025: </strong>\"I absolutely loved our custom wedding sculpture! They captured every detail beautifully...\" - Areeba Sadiq<br/><a href=\"https://www.instagram.com/p/DRKUSmfgeen/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DRKUSmfgeen/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_499BMa": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/2646C4B8-F5F0-4F7A-A880-77A4EF7E1FC2_2.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>May-11-2025: \"</strong>So happy with this statue of us! Amazing customer service and so easy to arrange 😍🔥🔥🔥🔥🔥\" - Adam Wilson<br/><a href=\"https://www.instagram.com/p/DJhHxJ9zTJH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DJhHxJ9zTJH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_V9cQzx": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Media_001_5.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>May-6-2025:</strong> \"You turned the simple photo into an eternal . The sculpture is absolutely, carefully crafted....\" - O.Ramona<br/><a href=\"https://www.instagram.com/p/DJTz37PzOif/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DJTz37PzOif/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_TMxwWM": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Meaningful_keepsake_of_their_love_This_order_belongs_to_Mrs._morai_2021_._I_helped_her_design_her_feet_just_the_way_she_wanted_doing_my_best_to_capture_every_detail_especially_matchin.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>May-22-2025: \"</strong>It was perfect, every detail was done with great care and attention. It exceeded all expectations.\"- Jacinta<br/><a href=\"https://www.instagram.com/p/DJ8wA4WxoZI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DJ8wA4WxoZI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_BKad6A": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5258_16d1ba4d-3b83-4905-b8db-3c76d53fdc48.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Mar-1-2025:</strong> \"The art speaks for itself, its amazing! Team were so helpful, even sent updates during process...\" - R.Wáğner <br/><a href=\"https://www.instagram.com/p/DGn-NPxTvJw/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DGn-NPxTvJw/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_9tBf78": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5256_29d0063a-1db3-4e2b-a410-40c5abeddde8.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Feb-22-2025: </strong>\"I asked for Chris to be slimmed, It's actually crazy how much it looks like . Thank you so so much!...\"-K. Colthorpe <br/><a href=\"https://www.instagram.com/p/DGXJlVMzDoV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DGXJlVMzDoV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><em><strong>View Post</strong></em></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_WbxzA9": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/z6534415939366_796a43944a05c154cb8dd062d1ee72de_a450973a-b51d-487a-8cb6-9763ccf72dfe.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Apr-23-2025:</strong>- \"I really can’t say enough about this company and the hard work they put into this figures!...\" - R.J Nugent<br/><a href=\"https://www.instagram.com/p/DIyQw0yyBEP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DIyQw0yyBEP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_G4KghM": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Media_001_4.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Apr-25-2025: </strong>\"These guys are fantastic! They mention about everything on my picture even! God bless all of you...\" - Persian<br/><a href=\"https://www.instagram.com/p/DI3dF1NS-Cq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" title=\"https://www.instagram.com/p/DI3dF1NS-Cq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_EFqYrD": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/CEE90958-7533-4DF3-A53D-3721835A671A_dd1cb1ef-4b6f-46a7-8398-80286747cfaa.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Jan-13-2025:</strong> \"The team were helpful through the process because I was quite particular with my request...\" - S.Buckley <br/><a href=\"https://www.instagram.com/p/DEw0GVJz8Aa/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DEw0GVJz8Aa/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_HNfJ7L": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/nh_man_hinh_2025-06-27_luc_11.44.05.png",
+            "stretch_image": true,
+            "link_text": "<p><strong>June-24-2025: \"</strong>He loves it! Thank you so much, Jess, you made this Fathers day (our first) very special...\" - R.Willison<br/><a href=\"https://www.instagram.com/p/DLPy5FQSJkR/?utm_source=ig_web_copy_link&igsh=amRneWR3Yng5Nnd6\" target=\"_blank\" title=\"https://www.instagram.com/p/DLPy5FQSJkR/?utm_source=ig_web_copy_link&igsh=amRneWR3Yng5Nnd6\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_k4tjnX": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5254_2e5cca65-d8bc-4539-a7b4-d9838c8d2719.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Feb-2-2025:</strong> \"Thank you so much! My friend was over the moon with this wonderful gift 👏.. Truly grateful for your work! – Zoe Martin <br/><a href=\"https://www.instagram.com/p/DFjygTsz8x9/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DFjygTsz8x9/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_bD9xzD": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/It_s_always_hard_to_goodbye_forever_Mrs._Kelle_Leblanc_truly_missed_her_father_so_she_asked_us_to_make_a_small_piece_for_his_memory_cabinet._she_wanted_everything_to_be_like_him_as_th.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>June-7-2025:</strong> \"Thank you guys so much! it really meaningful piece for for his memorial cabinet...\" - Kelly Leblanc<br/><a href=\"https://www.instagram.com/p/DKkU5zDSgNr/?utm_source=ig_web_copy_link&igsh=MTY0ZnR4ZjlsdGw0cQ==\" target=\"_blank\" title=\"https://www.instagram.com/p/DKkU5zDSgNr/?utm_source=ig_web_copy_link&igsh=MTY0ZnR4ZjlsdGw0cQ==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_UX4kjc": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/5A2EDDB4-1D68-4A08-934D-2863817422CE_6c579cda-3a27-4cb6-a677-8c00678f8fab.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Dec-27-2024:</strong> \"Thanks for all you did, it was given to my sister and her husband and they love the present ...\" - R.J.Nugent<br/><a href=\"https://www.instagram.com/p/DEDOhXgSWTP/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DEDOhXgSWTP/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_ebPirf": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/A89FA7E4-A7D3-462E-A240-4B3C9A2AA20A_2c639ccc-7f86-4960-bd67-84d6018d6cdf.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Nov-27-2024:</strong> \"Thank  you so so much. The thing you made really special and wonderful, it is worth to wait 💜💜💜...\" - A. Rodriguez <br/><a href=\"https://www.instagram.com/p/DC4b6MXzi7B/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DC4b6MXzi7B/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_eWhzHR": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Feedback_116th_Thanksgiving_gifts_My_client_ordered_three_custom_statues_as_gifts_for_her_fa_1.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Oct-13-2025: </strong>\"Thank you there beautiful x. Thank you for creating something we’ll cherish forever!...\"- Hardip Nagra<br/><a href=\"https://www.instagram.com/p/DQ-rP-KkuXD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DQ-rP-KkuXD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><strong>View Post</strong></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_ChCwVE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/My_client_Mrs._violxttaa_wanted_to_create_special_gift_for_her_mother_in_law_birthday_._This_picture_contains_many_of_their_memories_because_her_father_in_law_passed_away._We_can_t_wa.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>May-21-2025: \"</strong>I love it! Thank you🙏🙏!! the statues so much detail and made my mother in law cry💜😢😭\" - Violetta Christopoulou<br/><a href=\"https://www.instagram.com/p/DJ6aR12TJx_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DJ6aR12TJx_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_LdPbcE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/me_and_my_son_love_it..._Just_received_this_lovely_feedback_from_a_king-guard_fatherHe_asked_f.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>July-2-2025:</strong> \"Absolute love the work you have done bringing this image to life for me. Me and my son love it 😊...\" - K.M Evans<br/><a href=\"https://www.instagram.com/p/DLkVr7hzmFC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DLkVr7hzmFC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_YqG9Mm": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Such_a_lovely_client_She_wanted_to_create_a_surprise_for_her_husband_and_everything_I_made_based_on_her_photo_turned_out_better_than_expected_She_even_had_the_idea_to_mix_colors_in_th.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>May-26-2025: </strong>\"Totally worth investing your money with them everything comes out as wanted to...\" - Karina Ramírez-Oliver<br/><a href=\"https://www.instagram.com/p/DKHZH-1BsU5/?utm_source=ig_web_copy_link&igsh=cW1hbzhlM2ZpZmRr\" target=\"_blank\" title=\"https://www.instagram.com/p/DKHZH-1BsU5/?utm_source=ig_web_copy_link&igsh=cW1hbzhlM2ZpZmRr\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_E6D88a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/EBA930B0-354A-4B14-986D-2852816B5964.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>May-11-2025: \"</strong>Absolutely fantastic great little figure thanks again. Great communication with the seller\" - L.Hendry<br/><a href=\"https://www.instagram.com/p/DJe6FjZzjyq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\" target=\"_blank\" title=\"https://www.instagram.com/p/DJe6FjZzjyq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_p96xAj": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/0830AD8A-DD3E-4EB3-927E-DF258CA48B36_9786b68b-997e-490f-9f60-bc7b375101a8.jpg",
+            "stretch_image": true,
+            "link_text": "<p><strong>Mar-25-2025:</strong> \"It's safe to say Keilley Loved the statue (As I did too). And  big thank you for the little details too...\" - A.Shepherd <br/><a href=\"https://www.instagram.com/p/DHnt2COz-Xt/?utm_source=ig_web_copy_link\" target=\"_blank\" title=\"https://www.instagram.com/p/DHnt2COz-Xt/?utm_source=ig_web_copy_link\"><span style=\"text-decoration:underline\"><strong>View Post</strong></span></a></p>",
+            "link_url": "",
+            "background": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_hVUB7f",
+        "item_8DpC4J",
+        "item_8VezjV",
+        "item_ahPHQB",
+        "item_66VUr8",
+        "item_4KHhEt",
+        "item_iJKacE",
+        "item_HqFjrY",
+        "item_KTkhJp",
+        "item_JPKqDt",
+        "item_m6BWMK",
+        "item_TGcGwA",
+        "item_7VRGzy",
+        "item_NqyEDj",
+        "item_eFtxGL",
+        "item_DEdgVT",
+        "item_499BMa",
+        "item_V9cQzx",
+        "item_TMxwWM",
+        "item_BKad6A",
+        "item_9tBf78",
+        "item_WbxzA9",
+        "item_G4KghM",
+        "item_EFqYrD",
+        "item_HNfJ7L",
+        "item_k4tjnX",
+        "item_bD9xzD",
+        "item_UX4kjc",
+        "item_ebPirf",
+        "item_eWhzHR",
+        "item_ChCwVE",
+        "item_LdPbcE",
+        "item_YqG9Mm",
+        "item_E6D88a",
+        "item_p96xAj"
+      ],
+      "name": "Image link custom",
+      "settings": {
+        "full_width": false,
+        "block_size": "medium",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "review_slider_yqetFz": {
+      "type": "review-slider",
+      "blocks": {
+        "review_Wwrwxj": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/IMG_5832_e628b6f6-0b99-4d87-82e3-9aa256dbbc51.jpg",
+            "review_video": "https://cdn.shopify.com/videos/c/o/v/fe58ceea77c5490f8f41b05263c9e648.mov",
+            "reviewer_name": "Terry Clark's family",
+            "review_stars": 5,
+            "review_text": "",
+            "review_product": ""
+          }
+        },
+        "review_qXtELq": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/F1B02692-285F-46D2-99D2-DEA4684DBEA8_5bca2f34-e5e6-45e5-9a26-3943fee2c3b7.jpg",
+            "review_video": "https://cdn.shopify.com/videos/c/o/v/4ae5a5662aaa4ed193562c1a57f13388.mov",
+            "reviewer_name": "Deep Tanwar Family",
+            "review_stars": 5,
+            "review_text": "",
+            "review_product": ""
+          }
+        },
+        "review_D7fYB7": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/0779C6F4-8CBF-4002-9F16-2ED916494300.jpg",
+            "review_video": "https://cdn.shopify.com/videos/c/o/v/ad0e00ae9a494e63987dd6c7ad1e1f23.mp4",
+            "reviewer_name": "Nilton Alves",
+            "review_stars": 5,
+            "review_text": "",
+            "review_product": ""
+          }
+        },
+        "review_JcbPVx": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/IMG_5253.jpg",
+            "review_video": "https://cdn.shopify.com/videos/c/o/v/fdf16e36278546679bb8151660e6940d.mp4",
+            "reviewer_name": "Max Cornhill",
+            "review_stars": 5,
+            "review_text": "",
+            "review_product": ""
+          }
+        },
+        "review_zQDVyt": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/IMG_5473.jpg",
+            "review_video": "https://cdn.shopify.com/videos/c/o/v/4393fa739d7b481d8155a6f77643601f.mov",
+            "reviewer_name": "Haditah",
+            "review_stars": 5,
+            "review_text": "",
+            "review_product": ""
+          }
+        },
+        "review_jrgrLJ": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/DFB3FCE1-9CFC-48C6-908A-16E4F96BB731.jpg",
+            "review_video": "https://cdn.shopify.com/videos/c/o/v/263125848a51492789567ca475ee5766.mov",
+            "reviewer_name": "Daniel",
+            "review_stars": 5,
+            "review_text": "",
+            "review_product": ""
+          }
+        },
+        "review_R3BH6Y": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/D9EA5C8E-5DFA-44B6-8C16-71D406C40043.jpg",
+            "review_video": "https://cdn.shopify.com/videos/c/o/v/c01c7de4c74e435b8b4a1971bc298f09.mp4",
+            "reviewer_name": "Victor",
+            "review_stars": 5,
+            "review_text": "",
+            "review_product": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_Wwrwxj",
+        "review_qXtELq",
+        "review_D7fYB7",
+        "review_JcbPVx",
+        "review_zQDVyt",
+        "review_jrgrLJ",
+        "review_R3BH6Y"
+      ],
+      "name": "Customer Reviews",
+      "settings": {}
+    },
+    "custom_liquid_rxeDkb": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<p style=\"text-align: center\" class=\"h4 hyphenate\">Reaction from customers</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "review_slider_g8WT7X": {
+      "type": "review-slider",
+      "blocks": {
+        "review_NyT6d9": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/0779C6F4-8CBF-4002-9F16-2ED916494300.jpg",
+            "review_video": "https://cdn.shopify.com/videos/c/o/v/ad0e00ae9a494e63987dd6c7ad1e1f23.mp4",
+            "reviewer_name": "",
+            "review_stars": 5,
+            "review_text": "",
+            "review_product": ""
+          }
+        },
+        "review_YRhaDw": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/F1B02692-285F-46D2-99D2-DEA4684DBEA8.jpg",
+            "review_video": "https://cdn.shopify.com/videos/c/o/v/4ae5a5662aaa4ed193562c1a57f13388.mov",
+            "reviewer_name": "",
+            "review_stars": 5,
+            "review_text": "",
+            "review_product": ""
+          }
+        },
+        "review_ipMXBK": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/IMG_0316.jpg",
+            "review_video": "https://cdn.shopify.com/videos/c/o/v/fe58ceea77c5490f8f41b05263c9e648.mov",
+            "reviewer_name": "",
+            "review_stars": 5,
+            "review_text": "",
+            "review_product": ""
+          }
+        },
+        "review_3PMB3A": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/IMG_5253.jpg",
+            "review_video": "https://cdn.shopify.com/videos/c/o/v/fdf16e36278546679bb8151660e6940d.mp4",
+            "reviewer_name": "",
+            "review_stars": 5,
+            "review_text": "",
+            "review_product": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_NyT6d9",
+        "review_YRhaDw",
+        "review_ipMXBK",
+        "review_3PMB3A"
+      ],
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "before_after_image_kKRprb",
+    "rich_text_UprtDa",
+    "faq_gdQwpK",
+    "related-products",
+    "image_link_block_custom_tchJKE",
+    "image_link_block_custom_F3ABJe",
+    "review_slider_yqetFz",
+    "custom_liquid_rxeDkb",
+    "review_slider_g8WT7X"
+  ]
+}
