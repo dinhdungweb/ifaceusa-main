@@ -67,6 +67,20 @@
             "size_chart_page": ""
           }
         },
+        "image_upload_47kFxg": {
+          "type": "image_upload",
+          "settings": {
+            "heading": "Upload photos (optional)",
+            "description": "You can upload photos right here or send them via messages later.",
+            "show_slot_1": true,
+            "label_1": "Picture 1 (Main picture)",
+            "show_slot_2": true,
+            "label_2": "Picture 2 (For references)",
+            "show_slot_3": true,
+            "label_3": "Picture 3 (For references)",
+            "note": "Accepted formats: JPG, PNG, GIF, WEBP."
+          }
+        },
         "button_JHqbXG": {
           "type": "button",
           "settings": {
@@ -113,6 +127,7 @@
         "separator",
         "description",
         "variant_picker",
+        "image_upload_47kFxg",
         "button_JHqbXG",
         "quantity_selector",
         "buy_buttons",
