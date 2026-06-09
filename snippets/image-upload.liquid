@@ -16,12 +16,16 @@ Supported variables
 {%- endcomment -%}
 
 <div id="image-upload-{{ block.id }}" class="image-upload" {{ block.shopify_attributes }}>
-  {%- if block.settings.heading != blank -%}
-    <p class="image-upload__heading bold">{{ block.settings.heading }}</p>
-  {%- endif -%}
+  {%- if block.settings.heading != blank or block.settings.description != blank -%}
+    <div class="image-upload__header">
+      {%- if block.settings.heading != blank -%}
+        <p class="image-upload__heading bold">{{ block.settings.heading }}</p>
+      {%- endif -%}
 
-  {%- if block.settings.description != blank -%}
-    <p class="image-upload__description text-subdued text-sm">{{ block.settings.description }}</p>
+      {%- if block.settings.description != blank -%}
+        <p class="image-upload__description text-subdued text-sm">{{ block.settings.description }}</p>
+      {%- endif -%}
+    </div>
   {%- endif -%}
 
   <div class="image-upload__slots">
@@ -147,6 +151,12 @@ Supported variables
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+
+  .image-upload__header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 
   .image-upload__heading {

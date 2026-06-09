@@ -762,6 +762,47 @@ quick buy information in a template, that will be extracted in JS, but ensure it
       ]
     },
     {
+      "type": "personalization_note",
+      "name": "Personalization note",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Add a text area block for custom personalization notes. Note contents will appear in the order details."
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Personalization"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Contact IFACE3D via Etsy message or iface3dhandmade@gmail.com<br>Got any special requests? Just write them here.</p>"
+        },
+        {
+          "type": "text",
+          "id": "placeholder",
+          "label": "Placeholder",
+          "default": "Enter your instructions here..."
+        },
+        {
+          "type": "number",
+          "id": "max_length",
+          "label": "Maximum characters limit",
+          "default": 999
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required",
+          "default": false
+        }
+      ]
+    },
+    {
       "type": "quantity_selector",
       "name": "Quantity selector",
       "limit": 1,

@@ -264,6 +264,11 @@ Supported variables
             {%- render 'image-upload', block: block, form_id: product_form_id -%}
           </div>
 
+        {%- when 'personalization_note' -%}
+          <div class="product-info__personalization-note">
+            {%- render 'personalization-note', block: block, form_id: product_form_id -%}
+          </div>
+
         {%- when 'quantity_selector' -%}
           {%- if product.available -%}
             {%- assign variant = product.selected_or_first_available_variant -%}

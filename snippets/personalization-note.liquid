@@ -1,0 +1,123 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PERSONALIZATION NOTE
+----------------------------------------------------------------------------------------------------------------------
+
+Renders a textarea for personalization details, bound to the product form.
+Includes character limit counting.
+
+* block: the block settings
+* form_id: the ID of the product form to bind the note textarea to
+{%- endcomment -%}
+
+<div id="personalization-note-{{ block.id }}" class="personalization-note" {{ block.shopify_attributes }}>
+  {%- if block.settings.heading != blank or block.settings.description != blank -%}
+    <div class="personalization-note__header">
+      {%- if block.settings.heading != blank -%}
+        <p class="personalization-note__heading bold">{{ block.settings.heading }}</p>
+      {%- endif -%}
+
+      {%- if block.settings.description != blank -%}
+        <div class="personalization-note__description text-subdued text-sm">{{ block.settings.description }}</div>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div class="personalization-note__field">
+    <textarea 
+      id="personalization-note-input-{{ block.id }}" 
+      name="properties[{{ block.settings.heading | default: 'Personalization' }}]" 
+      form="{{ form_id }}"
+      placeholder="{{ block.settings.placeholder }}"
+      maxlength="{{ block.settings.max_length | default: 999 }}"
+      {% if block.settings.required %}required{% endif %}
+      class="personalization-note__textarea"
+      rows="3"
+    ></textarea>
+    
+    <div class="personalization-note__footer">
+      <span class="personalization-note__counter">
+        <span class="personalization-note__counter-current">0</span>/<span class="personalization-note__counter-max">{{ block.settings.max_length | default: 999 }}</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .personalization-note {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .personalization-note__header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .personalization-note__heading {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .personalization-note__description {
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .personalization-note__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .personalization-note__textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 12px 14px;
+    border: 1px solid rgb(var(--text-color) / 0.2);
+    border-radius: 8px;
+    background: transparent;
+    color: rgb(var(--text-color));
+    font-size: 14px;
+    font-family: inherit;
+    line-height: 1.5;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .personalization-note__textarea:focus {
+    border-color: rgb(var(--text-color) / 0.5);
+    box-shadow: 0 0 0 2px rgb(var(--text-color) / 0.05);
+  }
+
+  .personalization-note__footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .personalization-note__counter {
+    font-size: 12px;
+    color: rgb(var(--text-color) / 0.5);
+  }
+</style>
+
+<script>
+  (function() {
+    const noteBlock = document.getElementById('personalization-note-{{ block.id }}');
+    if (!noteBlock) return;
+
+    const textarea = noteBlock.querySelector('.personalization-note__textarea');
+    const currentCounter = noteBlock.querySelector('.personalization-note__counter-current');
+
+    if (textarea && currentCounter) {
+      textarea.addEventListener('input', function() {
+        currentCounter.textContent = this.value.length;
+      });
+    }
+  })();
+</script>
